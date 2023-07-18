@@ -1,0 +1,78 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+img,
+video,
+picture,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+.main {
+  height: 100dvh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.container {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 2.5rem;
+  padding-block: 2.5rem;
+}
+
+#section-1 .container {
+  max-width: unset;
+  width: 100%;
+  padding: 0;
+}
+
+#section-1 .layout {
+  min-height: 400px;
+  height: 100dvh;
+  position: relative;
+}
+
+#section-1 .layout img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#section-1 .text {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+  max-width: 25ch;
+  text-wrap: balance;
+  text-align: right;
+}
+
+#section-1 .card-wrap {
+  position: absolute;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 24px;
+}
+
+#section-1 .card {
+  padding: 12px;
+  background-color: cornflowerblue;
+}
